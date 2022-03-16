@@ -9,11 +9,20 @@ public class Basic_Movement : MonoBehaviour
     private Rigidbody2D playerRigidBody;
     private SpriteRenderer spriteRenderer;
 
+    [Header("Movement")]
     [SerializeField]
     private float moveSpeed = 3.0f;
 
     [SerializeField]
     private float jumpForce = 400.0f;
+
+    [Header("Ground")]
+    [SerializeField]
+    private Transform groundPoint;
+    [SerializeField]
+    private float groundRadius = 0.2f;
+    [SerializeField]
+    private LayerMask groundLayers;
 
     private float horizontalInput;
     private bool facingRight = true;
@@ -43,7 +52,8 @@ public class Basic_Movement : MonoBehaviour
         float horizontalMovement = horizontalInput * moveSpeed;
         playerRigidBody.velocity = new Vector2(horizontalMovement, playerRigidBody.velocity.y);
 
-        if (isJump)
+        Debug.Log(isGrounded());
+        if (isJump && isGrounded())
         {
             playerRigidBody.AddForce(new Vector2(0, jumpForce));
             isJump = false;
@@ -59,4 +69,14 @@ public class Basic_Movement : MonoBehaviour
         }
     }
 
-}
+    private bool isGrounded()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundPoint.position, groundRadius, groundLayers);
+        for(int i = 0; i < colliders.Length; i++)
+            if(colliders[i].gameObject != gameObject)
+            {
+                return true;
+            }
+            return false;
+        }
+    }
