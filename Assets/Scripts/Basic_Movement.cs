@@ -9,15 +9,21 @@ public class Basic_Movement : MonoBehaviour
     private Rigidbody2D playerRigidBody;
     private SpriteRenderer spriteRenderer;
 
-    public float moveSpeed = 3.0f;
+    [SerializeField]
+    private float moveSpeed = 3.0f;
+
+    [SerializeField]
+    private float jumpForce = 400.0f;
 
     private float horizontalInput;
     private bool facingRight = true;
+    private bool isJump = false;
 
     
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -25,12 +31,23 @@ public class Basic_Movement : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         Flip(horizontalInput);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            isJump = true;
+        }
     }
 
     private void FixedUpdate()
     {
         float horizontalMovement = horizontalInput * moveSpeed;
         playerRigidBody.velocity = new Vector2(horizontalMovement, playerRigidBody.velocity.y);
+
+        if (isJump)
+        {
+            playerRigidBody.AddForce(new Vector2(0, jumpForce));
+            isJump = false;
+        }
     }
 
     private void Flip(float movement)
@@ -41,4 +58,5 @@ public class Basic_Movement : MonoBehaviour
             spriteRenderer.flipX = !facingRight;
         }
     }
+
 }
