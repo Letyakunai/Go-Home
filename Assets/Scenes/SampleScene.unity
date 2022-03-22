@@ -1793,6 +1793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Playerhealth: {fileID: 1715391626}
+  LeveltoLoad: {fileID: 1715391627}
 --- !u!1 &1088233684
 GameObject:
   m_ObjectHideFlags: 0
@@ -7782,6 +7783,7 @@ GameObject:
   - component: {fileID: 1715391624}
   - component: {fileID: 1715391623}
   - component: {fileID: 1715391622}
+  - component: {fileID: 1715391627}
   - component: {fileID: 1715391626}
   - component: {fileID: 1715391621}
   - component: {fileID: 1715391625}
@@ -7944,6 +7946,19 @@ MonoBehaviour:
   - {fileID: 1405173343}
   Full_Heart: {fileID: 21300000, guid: fed24bd82cefc0c4a8ef64dab6231b53, type: 3}
   Empty_Heart: {fileID: 21300002, guid: fed24bd82cefc0c4a8ef64dab6231b53, type: 3}
+--- !u!114 &1715391627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715391620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1125a0f1ccd6304bb89e26ddc21caf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeveltoLoad: 2
 --- !u!1 &1798340573
 GameObject:
   m_ObjectHideFlags: 0
