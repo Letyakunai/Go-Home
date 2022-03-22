@@ -8,7 +8,7 @@ public class EnemyMDamage : MonoBehaviour
     public PlayerHP Playerhealth;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "EnemyHitBox")
+        if (collision.gameObject.tag == "EnemyHitbox")
         {
             Playerhealth.health -= 1;
         }

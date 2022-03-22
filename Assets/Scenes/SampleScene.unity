@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 444063048}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: EnemyHitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -584,7 +584,7 @@ Transform:
   m_LocalScale: {x: 41.5625, y: 17.4012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -830,7 +830,7 @@ Transform:
   - {fileID: 1876820621}
   - {fileID: 1178333469}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &819443935
 GameObject:
@@ -7283,7 +7283,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1178333467
 GameObject:
@@ -7410,7 +7410,7 @@ Transform:
   - {fileID: 1088233685}
   - {fileID: 819443936}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1188320850
 GameObject:
@@ -7747,7 +7747,7 @@ Transform:
   - {fileID: 442254514}
   - {fileID: 1913595085}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &1626013970
 Material:
@@ -7786,8 +7786,8 @@ GameObject:
   - component: {fileID: 1715391621}
   - component: {fileID: 1715391625}
   m_Layer: 0
-  m_Name: Square
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: EnemyHitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7896,7 +7896,7 @@ Transform:
   m_Children:
   - {fileID: 1188320851}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1715391625
 BoxCollider2D:
