@@ -10,7 +10,7 @@ public class EnemyMDamage : MonoBehaviour
     public LevelLoader LeveltoLoad;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "EnemyHitbox")
+        if (collision.gameObject.tag == "Player")
         {
             Playerhealth.health -= 1;
         }
