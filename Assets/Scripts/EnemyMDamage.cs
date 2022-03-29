@@ -17,14 +17,14 @@ public class EnemyMDamage : MonoBehaviour
 
         if (Playerhealth.health <= 0)
         {
-            DestroySelf(collision.gameObject);
+            //DestroySelf(collision.gameObject);
             LeveltoLoad.LoadLevel();
         }
     }
 
-    private void DestroySelf(GameObject collidedObject)
+    /*private void DestroySelf(GameObject collidedObject)
     {
         Destroy(collidedObject);
         Destroy(this.gameObject);
-    }
+    }*/
 }
