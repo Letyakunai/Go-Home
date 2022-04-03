@@ -12,6 +12,7 @@ public class EnemyMDamage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            PlayerScore.ScoreValue += 100;
             Playerhealth.health -= 1;
         }
 
