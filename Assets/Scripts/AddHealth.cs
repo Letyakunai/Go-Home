@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class AddHealth : MonoBehaviour
 {
-    public float healthBonus = 1f;
-    public PlayerHP Playerhealth;
-    void Awake()
+   public int HealthAdd;
+   public PlayerHP Playerhealth;
+
+    public void Adding()
     {
-        playerHP = FindObjectOfType<PlayerHP>();
+        Playerhealth.health += 1;
+        Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
-    { 
-        if (playerHP.health < PplayerHP.numOfHearts)
+    {
+        if (other.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
-            playerHP.health = playerHP.health + healthBonus;
+            Adding();
         }
     }
-
-
 }
