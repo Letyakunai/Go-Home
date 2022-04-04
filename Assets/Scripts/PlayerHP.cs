@@ -11,6 +11,7 @@ public class PlayerHP : MonoBehaviour
     public Image[] Hearts;
     public Sprite Full_Heart;
     public Sprite Empty_Heart;
+ 
 
     // Update is called once per frame
     void Update()
@@ -40,5 +41,7 @@ public class PlayerHP : MonoBehaviour
             }
         }
     }
+
+
 }
     

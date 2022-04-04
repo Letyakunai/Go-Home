@@ -8,11 +8,13 @@ public class EnemyMDamage : MonoBehaviour
 {
     public PlayerHP Playerhealth;
     public LevelLoader LeveltoLoad;
+    //public Invulnerability Invul;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             PlayerScore.ScoreValue += 100;
+            //Invul.StartCoroutine(IFrame());
             Playerhealth.health -= 1;
         }
 
