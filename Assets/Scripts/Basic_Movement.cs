@@ -24,6 +24,11 @@ public class Basic_Movement : MonoBehaviour
     [SerializeField]
     private LayerMask groundLayers;
 
+    //audio
+    [SerializeField]
+    private AudioSource jumpSFX;
+
+
     private float horizontalInput;
     private bool facingRight = true;
     private bool isJump = false;
@@ -44,6 +49,7 @@ public class Basic_Movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             isJump = true;
+            jumpSFX.Play();
         }
     }
 
