@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Over4.unity
     guid: b9b352422d9fb6244ba993970b0ac799
   - enabled: 1
+    path: Assets/Scenes/EndLevel.unity
+    guid: 2bb130310cc01b84eaf57ecb72cf3fb1
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
