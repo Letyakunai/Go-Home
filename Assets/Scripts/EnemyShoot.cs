@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyShoot : MonoBehaviour
 {
-    
     public GameObject Enem_BulletPrefab;
     public Transform BulletSpawn;
     public float respawnTime = 3.0f;

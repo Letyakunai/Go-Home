@@ -5930,7 +5930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1125a0f1ccd6304bb89e26ddc21caf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeveltoLoad: 5
+  LeveltoLoad: 2
 --- !u!61 &2008575003
 BoxCollider2D:
   m_ObjectHideFlags: 0

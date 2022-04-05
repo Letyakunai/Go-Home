@@ -12,7 +12,7 @@ public class LevelLoader2 : MonoBehaviour
 
     public void LoadLevelEnd()
     {
-        SceneManager.LoadScene(LeveltoLoad);
+        SceneManager.LoadScene(LeveltoLoadEnd);
     }
 
     public void LoadLevel()
@@ -29,7 +29,7 @@ public class LevelLoader2 : MonoBehaviour
         }
         if (counter == 2)
         {
-            SceneManager.LoadScene(LeveltoLoadEnd);
+            LoadLevelEnd();
         }
     }
 }
