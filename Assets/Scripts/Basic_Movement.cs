@@ -48,8 +48,7 @@ public class Basic_Movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            isJump = true;
-            jumpSFX.Play();
+            isJump = true;    
         }
     }
 
@@ -63,6 +62,7 @@ public class Basic_Movement : MonoBehaviour
         {
             playerRigidBody.AddForce(new Vector2(0, jumpForce));
             isJump = false;
+            jumpSFX.Play();
         }
     }
 
