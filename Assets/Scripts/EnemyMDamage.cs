@@ -22,20 +22,21 @@ public class EnemyMDamage : MonoBehaviour
             PlayerScore.ScoreValue += 100;
             //Invul.StartCoroutine(IFrame());
 
-            invunT += Time.deltaTime * 1;
+            //invunT += Time.deltaTime * 1;
 
-            if (invunT > interval)
-            {
-                Playerhealth.health -= 1;
-                invunT = 0.0f;
-            }
+            //if (invunT > interval)
+            //{
+            Playerhealth.health -= 1;
+            //    invunT = 0.0f;
+            //}
             
         }
 
         if (Playerhealth.health <= 0)
         {
-            //DestroySelf(collision.gameObject);
+            //DestroySelf(collision.gameObject
             LeveltoLoad.LoadLevel();
+            Debug.Log("Ded.");
         }
     }
 

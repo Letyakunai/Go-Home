@@ -44,10 +44,10 @@ GameObject:
   - component: {fileID: 564893139579341813}
   - component: {fileID: 564893139579341812}
   - component: {fileID: 564893139579341811}
+  - component: {fileID: 1673966567}
   - component: {fileID: 564893139579341810}
   - component: {fileID: 564893139579341809}
   - component: {fileID: 564893139579341705}
-  - component: {fileID: 1673966567}
   - component: {fileID: 496440868}
   m_Layer: 7
   m_Name: Player
@@ -191,6 +191,21 @@ MonoBehaviour:
   - {fileID: 0}
   Full_Heart: {fileID: 21300000, guid: fed24bd82cefc0c4a8ef64dab6231b53, type: 3}
   Empty_Heart: {fileID: 21300002, guid: fed24bd82cefc0c4a8ef64dab6231b53, type: 3}
+--- !u!114 &1673966567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564893139579341808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95e8354f34c4c5428501c0ae5e1be13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TaserShot: {fileID: 2104457123542327807, guid: f007c205ba8ad064faa4e9f264c87b9c, type: 3}
+  _Player: {fileID: 564893139579341808}
+  AmmoCount: 1
 --- !u!50 &564893139579341810
 Rigidbody2D:
   serializedVersion: 4
@@ -334,21 +349,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1673966567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564893139579341808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e95e8354f34c4c5428501c0ae5e1be13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TaserShot: {fileID: 2707572139424119380, guid: 4ed9a30391f36ea4c9d54677e2df0329, type: 3}
-  _Player: {fileID: 0}
-  AmmoCount: 1
 --- !u!95 &496440868
 Animator:
   serializedVersion: 3
