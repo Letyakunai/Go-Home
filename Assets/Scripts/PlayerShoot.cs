@@ -30,4 +30,13 @@ public class PlayerShoot : MonoBehaviour
                 AmmoCount -= 1;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Gun Pickup")
+        {
+            Destroy(collision.gameObject);
+            AmmoCount += 1;
+        }
+    }
 }
