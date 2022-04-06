@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 564893139579341810}
   - component: {fileID: 564893139579341809}
   - component: {fileID: 564893139579341705}
+  - component: {fileID: 1673966567}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -222,7 +223,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0022979975, y: 0.0015814006}
+  m_Offset: {x: 0.0022979975, y: 0.0063438118}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -233,7 +234,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.29682565, y: 0.8773437}
+  m_Size: {x: 0.29682565, y: 0.8678189}
   m_EdgeRadius: 0
 --- !u!82 &564893139579341705
 AudioSource:
@@ -331,3 +332,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1673966567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564893139579341808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95e8354f34c4c5428501c0ae5e1be13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TaserShot: {fileID: 2707572139424119380, guid: 4ed9a30391f36ea4c9d54677e2df0329, type: 3}
+  _Player: {fileID: 0}
+  AmmoCount: 1

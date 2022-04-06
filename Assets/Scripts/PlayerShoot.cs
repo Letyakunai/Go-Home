@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-    public GameObject bulletPrefab;
+    public GameObject TaserShot;
+    public GameObject _Player;
     [Header("Ammo")]
     [SerializeField]
     private int AmmoCount;
@@ -21,7 +22,7 @@ public class PlayerShoot : MonoBehaviour
      if(AmmoCount >= 1)
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            Instantiate(TaserShot, transform.position, Quaternion.identity);
         }
     }
 }
