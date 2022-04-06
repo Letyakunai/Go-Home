@@ -953,7 +953,7 @@ PrefabInstance:
       objectReference: {fileID: 668008529}
     - target: {fileID: 564893139579341808, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
       propertyPath: m_Name
-      value: Player (1)
+      value: 'Player '
       objectReference: {fileID: 0}
     - target: {fileID: 564893139579341811, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
       propertyPath: Hearts.Array.data[0]

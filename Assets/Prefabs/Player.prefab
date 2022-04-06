@@ -209,7 +209,7 @@ MonoBehaviour:
   _Player: {fileID: 564893139579341808}
   shootspawn: {fileID: 2694283988205906490}
   animator: {fileID: 0}
-  AmmoCount: 1
+  AmmoCount: 0
 --- !u!50 &564893139579341810
 Rigidbody2D:
   serializedVersion: 4
