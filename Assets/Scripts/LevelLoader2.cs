@@ -25,7 +25,7 @@ public class LevelLoader2 : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             LoadLevel();
-            counter += 1;
+            //LevelManager.instance.Addcount(1);
         }
         if (counter == 2)
         {
