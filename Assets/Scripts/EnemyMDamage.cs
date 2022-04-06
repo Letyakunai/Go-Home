@@ -15,7 +15,7 @@ public class EnemyMDamage : MonoBehaviour
         {
             PlayerScore.ScoreValue += 100;
             //Invul.StartCoroutine(IFrame());
-            Playerhealth.health -= 1;
+            Playerhealth.health -= 1;           
         }
 
         if (Playerhealth.health <= 0)
@@ -25,9 +25,10 @@ public class EnemyMDamage : MonoBehaviour
         }
     }
 
-    /*private void DestroySelf(GameObject collidedObject)
+/*    private void DestroySelf(GameObject collidedObject)
     {
         Destroy(collidedObject);
         Destroy(this.gameObject);
-    }*/
+    }
+*/
 }
