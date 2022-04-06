@@ -53,10 +53,14 @@ public class Basic_Movement : MonoBehaviour
             isJump = true;
             animator.SetBool("IsJumping", true);
         }
+        OnLanding();
     }
 
      public void OnLanding()
     {
+        if(isGrounded() == false)
+        animator.SetBool("IsJumping", true);
+        else
         animator.SetBool("IsJumping", false);
     }
 
