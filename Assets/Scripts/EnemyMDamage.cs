@@ -9,7 +9,6 @@ public class EnemyMDamage : MonoBehaviour
     public PlayerHP Playerhealth;
     public LevelLoader LeveltoLoad;
     //public Invulnerability Invul;
-
     [Header("Invun Time")]
     [SerializeField]
     private float invunT;
@@ -31,6 +30,8 @@ public class EnemyMDamage : MonoBehaviour
             //}
             
         }
+
+    
 
         if (Playerhealth.health <= 0)
         {

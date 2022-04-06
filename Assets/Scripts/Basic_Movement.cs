@@ -9,6 +9,7 @@ public class Basic_Movement : MonoBehaviour
     private Rigidbody2D playerRigidBody;
     private SpriteRenderer spriteRenderer;
     public Animator animator;
+    public Transform transform;
 
     [Header("Movement")]
     [SerializeField]
@@ -84,7 +85,9 @@ public class Basic_Movement : MonoBehaviour
         if(movement > 0 && !facingRight || movement < 0 && facingRight)
         {
             facingRight = !facingRight;
-            spriteRenderer.flipX = !facingRight;
+            //spriteRenderer.flipX = !facingRight;
+            transform.Rotate(0f, 180f, 0f);
+
         }
     }
 

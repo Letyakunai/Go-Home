@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerShot : MonoBehaviour
 {
-    private Rigidbody2D rigid;
+    public Rigidbody2D rigid;
 
     [Header("Player Attributes")]
     [SerializeField]
@@ -13,33 +13,46 @@ public class PlayerShot : MonoBehaviour
     [Header("Shot Attributes")]
     [SerializeField]
     private float Direction;
-    private float Speed = 3.0f;
+    public float Speed = 3.0f;
     private float lifeTime = 3.0f;
+    public GameObject shocked;
 
     // Start is called before the first frame update
     void Start()
     {
-        Direction = 1;
+        //Direction = 1;
         rigid = GetComponent<Rigidbody2D>();
-        rigid.velocity = new Vector2(Speed*Direction, 0);
+        //Old shooting
+        //rigid.velocity = new Vector2(Speed*Direction, 0);
+
+        //new shooting
+        rigid.velocity = transform.right * Speed;
         Destroy(this.gameObject, lifeTime);
     }
 
     // Update is called once per frame
-    void Update()
+    /* void Update()
+     {
+         if(PlayerDirection(Player) == false)
+         {
+             Direction = 1;
+         }
+     }
+
+
+
+
+     bool PlayerDirection(GameObject Player)
+     {
+
+         return false;
+     }*/
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(PlayerDirection(Player) == false)
+        if (collision.gameObject.tag == "Enemy")
         {
-            Direction = 1;
+            shocked.GetComponent<EnemyMDamage>().enabled = false;
+
         }
-    }
-
-
-  
-
-    bool PlayerDirection(GameObject Player)
-    {
-
-        return false;
     }
 }

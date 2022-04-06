@@ -205,15 +205,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8606291365343713334, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606291365343713334, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1311992
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606291365343713334, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1473402
       objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713334, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.336004
+      value: -17.9949
       objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713334, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.690537
+      value: -0.8407
       objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713334, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -255,6 +263,14 @@ PrefabInstance:
       propertyPath: Playerhealth
       value: 
       objectReference: {fileID: 220832278}
+    - target: {fileID: 8606291365343713341, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: m_Size.y
+      value: 0.034526646
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606291365343713341, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.9416411
+      objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713343, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: m_Name
       value: EnemeyProt (1)
@@ -294,11 +310,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 564893139579341814, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
       propertyPath: m_FlipX
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 564893139579341815, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 564893139579341815, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1709,12 +1725,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713334, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1311992
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606291365343713334, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1473402
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606291365343713334, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.27441
+      value: -10.2208
       objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713334, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.58232766
+      value: -0.8762
       objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713334, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1756,6 +1780,14 @@ PrefabInstance:
       propertyPath: Playerhealth
       value: 
       objectReference: {fileID: 220832278}
+    - target: {fileID: 8606291365343713341, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: m_Size.y
+      value: 0.04891467
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606291365343713341, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.93313754
+      objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713343, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: m_Name
       value: EnemeyProt
@@ -4034,7 +4066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthAdd: 1
-  Playerhealth: {fileID: 0}
+  Playerhealth: {fileID: 220832278}
 --- !u!212 &1980816874
 SpriteRenderer:
   m_ObjectHideFlags: 0

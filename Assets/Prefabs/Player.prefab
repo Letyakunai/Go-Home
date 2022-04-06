@@ -68,6 +68,7 @@ Transform:
   m_LocalScale: {x: 1.1224642, y: 1.0816196, z: 1}
   m_Children:
   - {fileID: 564893139279189358}
+  - {fileID: 2694283988205906490}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -150,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 496440868}
+  transform: {fileID: 564893139579341815}
   moveSpeed: 3
   jumpForce: 325
   groundPoint: {fileID: 564893139279189358}
@@ -205,6 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TaserShot: {fileID: 2104457123542327807, guid: f007c205ba8ad064faa4e9f264c87b9c, type: 3}
   _Player: {fileID: 564893139579341808}
+  shootspawn: {fileID: 2694283988205906490}
   AmmoCount: 1
 --- !u!50 &564893139579341810
 Rigidbody2D:
@@ -368,3 +371,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &7463905559507146353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2694283988205906490}
+  m_Layer: 7
+  m_Name: PShoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2694283988205906490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7463905559507146353}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.917, y: 0.136, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 564893139579341815}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1363361552041616535}
   m_Layer: 0
   m_Name: BzztBzzt
-  m_TagString: Untagged
+  m_TagString: Bzzt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84875bd12bb23e43be731b0ef3fd868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerMovement: {fileID: 564893139579341813, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
+  rigid: {fileID: 1363361552041616535}
+  Player: {fileID: 8606291365343713343, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+  Direction: 0
+  Speed: 3
+  shocked: {fileID: 8606291365343713343, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
 --- !u!58 &6359997367429080485
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -133,5 +137,5 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
