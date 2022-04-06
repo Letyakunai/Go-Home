@@ -8,6 +8,7 @@ public class PlayerShoot : MonoBehaviour
     public GameObject _Player;
     public Transform shootspawn;
     public Animator animator;
+
     [Header("Ammo")]
     [SerializeField]
     private int AmmoCount;
@@ -25,7 +26,8 @@ public class PlayerShoot : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Instantiate(TaserShot, shootspawn.position, shootspawn.rotation);
-                animator.SetTrigger("shoot");
+                animator.Play("Player_Shoot");
+                AmmoCount -= 1;
         }
     }
 }

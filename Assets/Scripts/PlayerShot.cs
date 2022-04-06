@@ -51,8 +51,8 @@ public class PlayerShot : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            shocked.GetComponent<EnemyMDamage>().enabled = false;
-
+            collision.gameObject.GetComponent<AIPatrol>().enabled = false;
+            collision.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
         }
     }
 }

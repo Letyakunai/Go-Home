@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 564893139279189358}
   m_Layer: 0
-  m_Name: GroundPoint
+  m_Name: GroundPointwe
   m_TagString: Untagged
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564893139279189357}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.031, y: -0.956, z: 0}
+  m_LocalPosition: {x: -0.016, y: -0.856, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 564893139579341815}
@@ -208,6 +208,7 @@ MonoBehaviour:
   TaserShot: {fileID: 2104457123542327807, guid: f007c205ba8ad064faa4e9f264c87b9c, type: 3}
   _Player: {fileID: 564893139579341808}
   shootspawn: {fileID: 2694283988205906490}
+  animator: {fileID: 0}
   AmmoCount: 1
 --- !u!50 &564893139579341810
 Rigidbody2D:
@@ -228,7 +229,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: aeb785d438b97f44fb85acb884802059, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &564893139579341809
 BoxCollider2D:

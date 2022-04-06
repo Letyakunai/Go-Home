@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader2 : MonoBehaviour
 {
-    public int counter;
-    
+    [SerializeField]
+    private int Max_Loops = 2;
+
     public int LeveltoLoadEnd;
     public int LeveltoLoad;
 
@@ -24,12 +25,18 @@ public class LevelLoader2 : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            LoadLevel();
-            //LevelManager.instance.Addcount(1);
+            if (LoopCount.Instance.ShowCount() >= Max_Loops) 
+            {
+                Debug.Log("Worked");
+                LoadLevelEnd();
+            }
+            else
+            {
+                LoadLevel();
+                LoopCount.Instance.AddCount(1);
+                Debug.Log("Loop Added");
+            }
         }
-        if (counter == 2)
-        {
-            LoadLevelEnd();
-        }
+        
     }
 }
