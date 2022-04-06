@@ -8,6 +8,7 @@ public class Basic_Movement : MonoBehaviour
 
     private Rigidbody2D playerRigidBody;
     private SpriteRenderer spriteRenderer;
+    public Animator animator;
 
     [Header("Movement")]
     [SerializeField]
@@ -45,12 +46,20 @@ public class Basic_Movement : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         Flip(horizontalInput);
+        animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            isJump = true;    
+            isJump = true;
+            animator.SetBool("IsJumping", true);
         }
     }
+
+     public void OnLanding()
+    {
+        animator.SetBool("IsJumping", false);
+    }
+
 
     private void FixedUpdate()
     {
