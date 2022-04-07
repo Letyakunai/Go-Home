@@ -48,6 +48,15 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver Wet2.unity
     guid: e914b0ea6fcf2fd479cbc57469237623
   - enabled: 1
+    path: Assets/Scenes/GameOver Construction.unity
+    guid: bdc938ae4f90ab446a59fe9206ff41fb
+  - enabled: 1
+    path: Assets/Scenes/Game Over Construction 2.unity
+    guid: 15e8ab65ec5d3d342ae91557435a8e5f
+  - enabled: 1
+    path: Assets/Scenes/Game Over Caught.unity
+    guid: d88ede9c39847af4db665752a858d5bf
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

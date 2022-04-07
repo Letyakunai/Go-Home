@@ -18,4 +18,9 @@ public class LevelLoader : MonoBehaviour
             LoadLevel();
         }
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit");
+    }
 }
