@@ -103,7 +103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Playerhealth: {fileID: 0}
   LeveltoLoad: {fileID: 0}
-  Tazed: {fileID: 0}
+  Tazed: {fileID: 3720465509644795009, guid: f007c205ba8ad064faa4e9f264c87b9c, type: 3}
+  Player: {fileID: 564893139579341814, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
   Hit: 0
   Damage: 1
   Score: 100

@@ -31,8 +31,8 @@ public class PlayerShoot : MonoBehaviour
         {
             StunGunSFX.Play();
             Instantiate(TaserShot, shootspawn.position, shootspawn.rotation);
-                animator.Play("Player_Shoot");
-                AmmoCount -= 1;
+            animator.Play("Player_Shoot");
+            AmmoCount -= 1;
         }
     }
 
