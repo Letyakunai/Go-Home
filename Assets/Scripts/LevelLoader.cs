@@ -15,9 +15,11 @@ public class LevelLoader : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            other.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
             LoadLevel();
         }
     }
+
     public void QuitGame()
     {
         Application.Quit();

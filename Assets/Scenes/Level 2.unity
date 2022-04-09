@@ -256,6 +256,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713336, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 898207940}
+    - target: {fileID: 8606291365343713336, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: LeveltoLoad
       value: 
       objectReference: {fileID: 220832277}
@@ -1386,6 +1390,11 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!212 &898207940 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 564893139579341814, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
+  m_PrefabInstance: {fileID: 220832276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &965447605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1788,6 +1797,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8606291365343713336, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 898207940}
     - target: {fileID: 8606291365343713336, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: LeveltoLoad
       value: 

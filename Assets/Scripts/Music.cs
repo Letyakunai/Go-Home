@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DontDestroy : MonoBehaviour
+public class Music : MonoBehaviour
 {
     [SerializeField]
 
@@ -28,8 +28,8 @@ public class DontDestroy : MonoBehaviour
     }*/
 
     //METHOD 2: A better approach for Singleton Design Pattern
-    private static DontDestroy instance = null;
-    public static DontDestroy Instance
+    private static Music instance = null;
+    public static Music Instance
     {
         get
         {
@@ -37,7 +37,7 @@ public class DontDestroy : MonoBehaviour
             if (instance == null)
             {
                 //Check if there is an existing game object in the scene that has the component
-                instance = FindObjectOfType<DontDestroy>();
+                instance = FindObjectOfType<Music>();
                 //did not find any gameobject with the instance in the heirarchy
                 if (instance == null)
                 {
@@ -46,7 +46,7 @@ public class DontDestroy : MonoBehaviour
                     //change the default name
                     go.name = "DontDestroy";
                     //add component and set it as the instance
-                    instance = go.AddComponent<DontDestroy>();
+                    instance = go.AddComponent<Music>();
                     //make sure the object persists
                     DontDestroyOnLoad(go);
                 }

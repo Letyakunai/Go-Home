@@ -523,11 +523,6 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 564893139579341814, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
   m_PrefabInstance: {fileID: 496440866}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &252701315 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5420378551320128871, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
-  m_PrefabInstance: {fileID: 496440866}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &268868741
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,14 +952,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1673966567, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 668008529}
-    - target: {fileID: 1673966567, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
-      propertyPath: StunGunSFX
-      value: 
-      objectReference: {fileID: 252701315}
     - target: {fileID: 564893139579341808, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
       propertyPath: m_Name
       value: 'Player '
@@ -1179,7 +1166,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 570846759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58dd0c3677168124184c7bb26233be7f, type: 3}
+  m_Script: {fileID: 11500000, guid: b47cacb6f3cbe2e478601f032466e7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!82 &570846761
@@ -1542,11 +1529,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &668008529 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 496440868, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
-  m_PrefabInstance: {fileID: 496440866}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &713594799
 GameObject:
   m_ObjectHideFlags: 0
@@ -5605,21 +5587,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713336, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
-      propertyPath: Tazed
-      value: 
-      objectReference: {fileID: 3720465509644795009, guid: f007c205ba8ad064faa4e9f264c87b9c, type: 3}
-    - target: {fileID: 8606291365343713336, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 252701314}
-    - target: {fileID: 8606291365343713336, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8606291365343713336, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
-      propertyPath: invunTimer
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713336, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: LeveltoLoad
       value: 
@@ -5628,21 +5598,13 @@ PrefabInstance:
       propertyPath: Playerhealth
       value: 
       objectReference: {fileID: 1020657071}
-    - target: {fileID: 8606291365343713339, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
-      propertyPath: m_BodyType
-      value: 0
+    - target: {fileID: 8606291365343713341, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713343, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: m_Name
       value: EnemeyProt
-      objectReference: {fileID: 0}
-    - target: {fileID: 8606291365969884862, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 8606291365969884862, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}

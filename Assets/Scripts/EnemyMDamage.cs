@@ -19,7 +19,7 @@ public class EnemyMDamage : MonoBehaviour
 
     [Header("Invun Time")]
     [SerializeField]
-    private float invunTimer = 5.0f;
+    public float invunTimer = 5.0f;
     [SerializeField]
     private float invunInterval = 0.0f;
 

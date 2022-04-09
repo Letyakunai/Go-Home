@@ -154,7 +154,7 @@ MonoBehaviour:
   animator: {fileID: 496440868}
   transform: {fileID: 564893139579341815}
   moveSpeed: 3
-  jumpForce: 325
+  jumpForce: 350
   groundPoint: {fileID: 564893139279189358}
   groundRadius: 0.1
   groundLayers:
@@ -209,9 +209,9 @@ MonoBehaviour:
   TaserShot: {fileID: 2104457123542327807, guid: f007c205ba8ad064faa4e9f264c87b9c, type: 3}
   _Player: {fileID: 564893139579341808}
   shootspawn: {fileID: 2694283988205906490}
-  animator: {fileID: 0}
+  animator: {fileID: 496440868}
   AmmoCount: 0
-  StunGunSFX: {fileID: 0}
+  StunGunSFX: {fileID: 5420378551320128871}
 --- !u!50 &564893139579341810
 Rigidbody2D:
   serializedVersion: 4
