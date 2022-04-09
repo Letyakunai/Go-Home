@@ -154,7 +154,7 @@ MonoBehaviour:
   animator: {fileID: 496440868}
   transform: {fileID: 564893139579341815}
   moveSpeed: 3
-  jumpForce: 350
+  jumpForce: 375
   groundPoint: {fileID: 564893139279189358}
   groundRadius: 0.1
   groundLayers:

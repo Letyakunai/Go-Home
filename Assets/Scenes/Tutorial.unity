@@ -3027,6 +3027,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8606291365343713336, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 252701314}
+    - target: {fileID: 8606291365343713336, guid: d0d89d8cbd2de08418908e65efc851f5, type: 3}
       propertyPath: LeveltoLoad
       value: 
       objectReference: {fileID: 116250590}
