@@ -26,7 +26,7 @@ public class PlayerShot : MonoBehaviour
         //rigid.velocity = new Vector2(Speed*Direction, 0);
 
         //new shooting
-        rigid.velocity = transform.right * Speed;
+        rigid.velocity = transform.right * Speed * Time.deltaTime;
         Destroy(this.gameObject, lifeTime);
     }
 

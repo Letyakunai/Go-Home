@@ -96,14 +96,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8606291365343713343}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1952483bfd343c49ab7219bfa21e853, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Playerhealth: {fileID: 0}
   LeveltoLoad: {fileID: 0}
-  invunT: 0
+  Tazed: {fileID: 0}
+  Hit: 0
+  Damage: 1
+  Score: 100
+  invunTimer: 10
+  invunInterval: 0
 --- !u!50 &8606291365343713339
 Rigidbody2D:
   serializedVersion: 4
