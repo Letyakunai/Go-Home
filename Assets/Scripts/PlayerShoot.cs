@@ -13,6 +13,10 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField]
     private int AmmoCount;
 
+    //audio
+    [SerializeField]
+    private AudioSource StunGunSFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +29,7 @@ public class PlayerShoot : MonoBehaviour
      if(AmmoCount >= 1)
         if (Input.GetKeyDown(KeyCode.E))
         {
+            StunGunSFX.Play();
             Instantiate(TaserShot, shootspawn.position, shootspawn.rotation);
                 animator.Play("Player_Shoot");
                 AmmoCount -= 1;
